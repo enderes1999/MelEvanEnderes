@@ -1,260 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mel Evan Enderes | Portfolio</title>
+    <title>Mel Evan P. Enderes | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#Achievements">Achievements</a></li>
-            <li><a href="#Certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <nav id="navbar">
+        <a href="#home" class="logo">Mel Evan<span>Enderes</span></a>
+
+        <div class="menu-btn" id="menuBtn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero">
-    <div class="hero-content fade-in">
-        <div class="hero-image">
-            <img src="profpic.jpg" alt="Mel Evan P. Enderes">
-        </div>
-        <h1>Hello, I'm <span>Mel Evan P. Enderes</span></h1>
-        <h2 id="typing"></h2>
-        <p>
-            BS Information Systems Student passionate about
-            Web Development, Project Management, Data Analysis, and
-            Systems Development.
-        </p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-    </div>
-</section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="container">
+        <div class="hero-content reveal">
+            <div class="hero-image">
+                <img src="profpic.jpg" alt="Mel Evan P. Enderes">
+            </div>
+            <h1>Hello, I'm <span>Mel Evan P. Enderes</span></h1>
+            <h2 id="typing"></h2>
             <p>
-                As a Bachelor of Science in Information Systems student, 
-                I am passionate about Web Development, Project Management, 
-                Data Analysis, and Systems Development. 
-                I strive to develop innovative and user-centered solutions that combine technology and business needs. 
-                My experience in system development projects has strengthened my ability to analyze requirements, 
-                design effective solutions, and create responsive applications that deliver meaningful value to users 
-                and organizations.
+                Bachelor of Science in Information Systems student specializing in web development,
+                functional database management, project management, and data analysis.
             </p>
-            <p>
-                My notable projects include the Laboratory Information System
-                for Paragon Diagnostics and Multi-Specialty Clinic, and the Theia Gems POS and Inventory.
-            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>read works</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">write line</a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:enderes.melevan@gmail.com" class="social-icon" title="email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="tel:+639270056353" class="social-icon" title="phone"><i class="fas fa-phone"></i></a>
+                <a href="#" class="social-icon" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon" title="github"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </section>
 
-     <section id="skills">
-        <h2>Skills</h2>
-    <div class="skills-container">
-    <div class="skill">
-        <span>HTML</span>
-        <div class="progress">
-            <div class="progress-bar html"></div>
+    <section id="about">
+        <h2 class="reveal">about me <span class="mono-label">info</span></h2>
+        <div class="about-grid container">
+            <div class="about-text reveal">
+                <p>
+                    As a Bachelor of Science in Information Systems student, I am deeply focused on
+                    <span>web development</span>, <span>project management</span>, <span>data analysis</span>, and
+                    <span>system structures</span>.
+                    I focus on designing efficient, user-centered digital solutions that 
+                    bridge business requirements with technology-driven outcomes.
+                </p>
+                <p>
+                    Through academic projects and hands-on experience as a clinic programmer, 
+                    I have developed responsive web applications, managed project workflows, 
+                    analyzed operational data, and designed structured information systems that 
+                    support organizational processes. My experience includes database design, 
+                    system analysis, interface development, requirements gathering, 
+                    quality assurance testing, and system documentation.
+                </p>
+                <p>
+                    Notable projects include a Laboratory Information System for 
+                    Paragon Diagnostics and Multi-Specialty Clinic, which streamlines patient records, 
+                    laboratory results, inventory, and billing processes, and a Point-of-Sale and 
+                    Inventory Management System for Theia Gems, designed to improve sales tracking, 
+                    inventory control, and business reporting. These projects have strengthened 
+                    my ability to develop scalable systems, manage project deliverables, analyze 
+                    business data, and implement effective system structures that enhance operational 
+                    efficiency.
+                </p>
+            </div>
+
+            <div class="quick-facts reveal">
+                <div class="fact-card glass-panel">
+                    <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="fact-info">
+                        <h4>education</h4>
+                        <p>bs information systems</p>
+                    </div>
+                </div>
+                <div class="fact-card glass-panel">
+                    <div class="fact-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="fact-info">
+                        <h4>development</h4>
+                        <p>web &amp; database systems</p>
+                    </div>
+                </div>
+                <div class="fact-card glass-panel">
+                    <div class="fact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="fact-info">
+                        <h4>location</h4>
+                        <p>davao city, philippines</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="skill">
-        <span>CSS</span>
-        <div class="progress">
-            <div class="progress-bar css"></div>
+    </section>
+
+    <section id="skills">
+        <h2 class="reveal">skills stack <span class="mono-label">spec</span></h2>
+        <div class="skills-grid-enhanced container">
+            <!-- Frontend Card -->
+            <div class="skills-category glass-panel reveal">
+                <h3><i class="fas fa-code"></i> interface logic</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">html</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">css</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">javascript</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category glass-panel reveal">
+                <h3><i class="fas fa-server"></i> database / api</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">php</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">mysql / database design</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category glass-panel reveal">
+                <h3><i class="fas fa-project-diagram"></i> operations</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">project management</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta">
+                            <span class="skill-name">data analysis</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress">
-            <div class="progress-bar js"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <span>PHP</span>
-        <div class="progress">
-            <div class="progress-bar php"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <span>MySQL</span>
-        <div class="progress">
-            <div class="progress-bar mysql"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <span>Project Management</span>
-        <div class="progress">
-            <div class="progress-bar project-management"></div>
-        </div>
-    </div>
-    <div class="skill">
-        <span>Data Analysis</span>
-        <div class="progress">
-            <div class="progress-bar data-analysis"></div>
-        </div>
-    </div>
-</div>
+    </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Laboratory Information System</h3>
-                <p>
-                    A system developed for Paragon Diagnostics and Multi-Specialty Clinic 
-                    to efficiently manage and streamline its daily operations, 
-                    including appointment scheduling, patient records, laboratory results, 
-                    inventory tracking, billing, and report generation. 
-                </p>
-                <div class="project-image">
-            <img src="para.png" alt="Paragon Diagnostics">
+        <h2 class="reveal">selected works <span class="mono-label">code</span></h2>
+        <div class="project-grid-enhanced container">
+            <!-- Project 1 -->
+            <div class="project-card-enhanced glass-panel reveal">
+                <div class="project-img-container">
+                    <img src="para.png" alt="Laboratory Information System">
+                </div>
+                <div class="project-details">
+                    <h3>Laboratory Information System</h3>
+                    <p>
+                        A system optimized for Paragon Diagnostics and Multi-Specialty Clinic.
+                        Wired to compile test results, log clinical scheduling, track billing receipts, and monitor
+                        diagnostic inventory assets.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">php</span>
+                        <span class="project-tag">mysql</span>
+                        <span class="project-tag">javascript</span>
+                        <span class="project-tag">html</span>
+                    </div>
+                    <a href="#contact" class="project-action-link">
+                        <span>inquire details</span>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
-            </div>
-            <div class="project-card">
-                <h3>Theia Gems POS and Inventory System</h3>
-                <p>
-                    A POS and Inventory Management System developed for Theia Gems
-                    to efficiently manage and enhance its daily business operations,
-                    including sales transactions, inventory tracking, stock level monitoring,
-                    billing, and report generation.
-                </p>
-                <div class="project-image"> 
-                <img src="tg.png" alt="Theia Gems">
-            </div>
+
+            <div class="project-card-enhanced glass-panel reveal">
+                <div class="project-img-container">
+                    <img src="tg.png" alt="Theia Gems POS and Inventory">
+                </div>
+                <div class="project-details">
+                    <h3>Theia Gems POS &amp; Inventory</h3>
+                    <p>
+                        A database-linked Point-of-Sale tool structured for Theia Gems.
+                        Handles transaction histories, stock level calculations, and automatic invoice generations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">php</span>
+                        <span class="project-tag">mysql</span>
+                        <span class="project-tag">project management</span>
+                    </div>
+                    <a href="#contact" class="project-action-link">
+                        <span>inquire details</span>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <div class="container">
-            <div class="timeline">
-                <h3>Programmer</h3>
-                <span>Paragon Diagnostics and Multi-Specialty Clinic</span>
-                <p>
-                    Worked as a Programmer in the development of a Laboratory Information System, 
-                    responsible for coding system features, designing databases, testing functionalities, 
-                    debugging errors, and ensuring the application's performance and reliability.
-                </p>
+        <h2 class="reveal">experience <span class="mono-label">jobs</span></h2>
+        <div class="experience-timeline container reveal">
+
+            <div class="timeline-node">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Programmer</h3>
+                            <span class="timeline-company">Paragon Diagnostics and Multi-Specialty Clinic</span>
+                        </div>
+                        <span class="timeline-date">2026</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Designed SQL schemas and wrote backend configurations for the clinic database system.
+                            Conducted functional audits, debugged bugs, and optimized logic for clinic staff inputs.
+                        </p>
+                    </div>
                 </div>
-
-            <div class="timeline">
-                <h3>Quality Assurance Intern</h3>
-                <span>Wela School Systems</span>
-                <p>
-                    Assisted the Quality Assurance (QA) team in conducting software testing, 
-                    documenting test cases, identifying and reporting defects, 
-                    validating system functionalities, and ensuring the quality 
-                    and reliability of applications before deployment.
-                </p>
             </div>
 
-            <div class="timeline">
-                <h3>Project Manager</h3>
-                <span>Theia Gems</span>
-                <p>
-                   Led the development of the Theia Gems POS and Inventory System 
-                   by managing project planning, team coordination, task delegation, 
-                   progress monitoring, and ensuring the successful completion of 
-                   project milestones and deliverables.
-                </p>
+            <div class="timeline-node">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Quality Assurance Intern</h3>
+                            <span class="timeline-company">Wela Online Corporation</span>
+                        </div>
+                        <span class="timeline-date">2026</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Supported development sprints by writing functional checklists, executing test paths,
+                            and logging bugs to verify software performance prior to deployment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-node">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Project Manager</h3>
+                            <span class="timeline-company">Theia Gems</span>
+                        </div>
+                        <span class="timeline-date">2026</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>
+                            Coordinated programmer actions and milestone paths.
+                            Compiled client specifications, verified timelines, and reported completion logs.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="Achievements">
-        <h2>Achievements</h2>
-        <div class="container">
-            <div class="timeline">
-            <ul>
-                <p>Dean's List for Academic Excellence (2022-2024)</p>
-            </ul>
+    <section id="achievements">
+        <h2 class="reveal">key milestones <span class="mono-label">wins</span></h2>
+        <div class="achievements-grid container reveal">
+            <!-- Achievement 1 -->
+            <div class="achievement-card glass-panel">
+                <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                <h4>Dean's List</h4>
+                <p>Honored for Academic Excellence during successive terms from 2022 to 2024.</p>
+            </div>
+
+            <div class="achievement-card glass-panel">
+                <div class="achievement-icon"><i class="fas fa-user-shield"></i></div>
+                <h4>Civil Service</h4>
+                <p>Passed the official Philippine Civil Service Examination (Professional level).</p>
+            </div>
+
+            <div class="achievement-card glass-panel">
+                <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                <h4>Volleyball Champion</h4>
+                <p>4X PSITS Region XI Volleyball Men's Champion.</p>
+            </div>
+
+            <div class="achievement-card glass-panel">
+                <div class="achievement-icon"><i class="fas fa-clapperboard"></i></div>
+                <h4>Lente Awards</h4>
+                <p>Awarded Best Sci-fi Film, Best Cinematography, and Best Production design at LENTE 2022.</p>
+            </div>
         </div>
-            </div>
-            <div class="container">
-            <div class="timeline">
-                <p>Civil Service Passer (Professional)</p>
-            </div>
-            </div>
-            <div class="container">
-            <div class="timeline">    
-                <p>4x PSITS Region XI Men's Volleyball Champion</p>
-            </div>
-            </div>
-            <div class="container">
-            <div class="timeline">    
-                <p>PAG-HIUSA SA LENTE MULTIMEDIA FESTIVAL 2022 </p>
-                <p> Best Sci fi film </p>
-                <p> Best Cinematography </p>
-                <p> Best Production design </p>
-            </div>
-            </div>
     </section>
 
-    <section id="Certificates">
-        <h2>Certificates</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="ENDERES.png" alt="WELA CERTIFICATE">
-            </div>
+    <section id="certificates">
+        <h2 class="reveal">certifications <span class="mono-label">docs</span></h2>
+        <div class="certificate-grid container reveal">
+
+            <div class="certificate-card" data-img="ENDERES wela cert.png"
+                data-caption="Wela Online Corporation Internship Completion Certificate">
+                <img src="ENDERES.png" alt="WELA Certificate">
+                <div class="certificate-overlay">
+                    <h4>Wela Online Corporation</h4>
+                    <p>internship certificate <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="pic.jpg" alt="WELA CERTIFICATE">
-            </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="pic1.jpg" alt="WELA CERTIFICATE">
-            </div>
-            </div>
-   
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="pic2.jpg" alt="WELA CERTIFICATE">
-            </div>
+            <div class="certificate-card" data-img="pic.jpg" data-caption="Technical Seminar Certificate">
+                <img src="pic.jpg" alt="Certificate">
+                <div class="certificate-overlay">
+                    <h4>Technical Seminar</h4>
+                    <p>participation certificate <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="py1.jpg" alt="WELA CERTIFICATE">
-            </div>
+            <div class="certificate-card" data-img="pic1.jpg" data-caption="IT Conference Attendance">
+                <img src="pic1.jpg" alt="Certificate">
+                <div class="certificate-overlay">
+                    <h4>IT Conference</h4>
+                    <p>attendance certificate <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image"> 
-                <img src="py2.jpg" alt="WELA CERTIFICATE">
+            <div class="certificate-card" data-img="pic2.jpg" data-caption="Civil Service Examination">
+                <img src="pic2.jpg" alt="Certificate">
+                <div class="certificate-overlay">
+                    <h4>Civil Service</h4>
+                    <p>passer certificate <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
             </div>
+
+            <div class="certificate-card" data-img="py1.jpg" data-caption="Python Programming Basics Course">
+                <img src="py1.jpg" alt="Certificate">
+                <div class="certificate-overlay">
+                    <h4>Python Programming</h4>
+                    <p>course certificate (basic) <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
+            </div>
+
+            <div class="certificate-card" data-img="py2.jpg" data-caption="Python Advanced Structures Course">
+                <img src="py2.jpg" alt="Certificate">
+                <div class="certificate-overlay">
+                    <h4>Python Advanced</h4>
+                    <p>course certificate (advanced) <i class="fas fa-expand-arrows-alt"></i></p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-box">
-            <p>Email: enderes.melevan@gmail.com</p>
-            <p>Phone: +63 927 005 6353</p>
-            <p>Location: Philippines</p>
+        <h2 class="reveal">get in touch <span class="mono-label">mail</span></h2>
+        <div class="contact-grid container reveal">
+            <!-- Left Info Cards -->
+            <div class="contact-info-wrap">
+                <div class="contact-info-card glass-panel">
+                    <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info-details">
+                        <h4>email</h4>
+                        <p>enderes.melevan@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card glass-panel">
+                    <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-info-details">
+                        <h4>phone</h4>
+                        <p>+63 927 005 6353</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card glass-panel">
+                    <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-info-details">
+                        <h4>location</h4>
+                        <p>philippines</p>
+                    </div>
+                </div>
+            </div>
+>
+            <div class="contact-form-card glass-panel">
+                <form id="contactForm" onsubmit="return false;">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <input type="text" id="formName" class="form-control" placeholder=" " required>
+                            <label for="formName" class="form-label">your name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" class="form-control" placeholder=" " required>
+                            <label for="formEmail" class="form-label">your email</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formSubject" class="form-control" placeholder=" " required>
+                        <label for="formSubject" class="form-label">subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" class="form-control" placeholder=" " required></textarea>
+                        <label for="formMessage" class="form-label">message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                        <span>send message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Mel Evan P. Enderes | Portfolio</p>
+        <p>© 2026 mel evan p. enderes | all rights reserved.</p>
     </footer>
+
+    <div id="lightbox" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImg" src="" alt="Full-sized Certificate">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <button id="topBtn" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
-<button id="topBtn">↑</button>
+
 </html>
